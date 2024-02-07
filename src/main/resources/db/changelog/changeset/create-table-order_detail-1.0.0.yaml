@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: Sashka
+      changes:
+        - createTable:
+            tableName: order_detail
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: order_id
+                  type: bigint
+              - column:
+                  name: price
+                  type: integer
+              - column:
+                  name: product_id
+                  type: bigint
+              - column:
+                  name: quantity
+                  type: integer

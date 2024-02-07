@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: Sashka
+      changes:
+        - createTable:
+            tableName: orders
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: customer_id
+                  type: bigint
+              - column:
+                  name: payment_method
+                  type: varchar(255)
+              - column:
+                  name: order_status
+                  type: varchar(255)
+              - column:
+                  name: order_date
+                  type: timestamp(6)

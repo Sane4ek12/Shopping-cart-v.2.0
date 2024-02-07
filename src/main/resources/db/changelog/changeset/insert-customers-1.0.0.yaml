@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: Sashka
+      changes:
+        - insert:
+            tableName: customer
+            columns:
+              - column:
+                  name: address
+                  value: "Voronezh"
+              - column:
+                  name: email
+                  value: "ppetrov@gmail.com"
+              - column:
+                  name: name
+                  value: "Petya"
+              - column:
+                  name: phone
+                  value: "88005553535"
+        - insert:
+            tableName: customer
+            columns:
+              - column:
+                  name: address
+                  value: "Voronezh"
+              - column:
+                  name: email
+                  value: "vasya@gmail.com"
+              - column:
+                  name: name
+                  value: "Vasya"
+              - column:
+                  name: phone
+                  value: "88005553535"
+        - insert:
+            tableName: customer
+            columns:
+              - column:
+                  name: address
+                  value: "Voronezh"
+              - column:
+                  name: email
+                  value: "kolya@gmail.com"
+              - column:
+                  name: name
+                  value: "Kolya"
+              - column:
+                  name: phone
+                  value: "88005553535"
